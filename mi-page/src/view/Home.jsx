@@ -1,11 +1,19 @@
 import React from 'react';
+import Navigator from '../components/Navigator';
+import Footer from '../components/Footer';
 
-export default class Home extends React.Component{
+class Home extends React.Component{
     render(){
         return (
             <div>
-                <p>dafdsfasf</p>
+                <Navigator />
+                <div>
+                    <p>我是正文</p>
+                </div>
+                <Footer />
             </div>
         )
     }
 }
+
+export default Home;
