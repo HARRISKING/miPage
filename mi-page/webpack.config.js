@@ -10,19 +10,30 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
     module: {
-        rules: [
-          {
-            test: /(\.js|\.jsx)$/,
-            exclude: /node_modules/,
-            use: {
-              loader: 'babel-loader',
-            }
+      rules: [
+        {
+          test: /(\.js|\.jsx)$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
           }
-        ]
-      },
-      devServer: {
-        contentBase:'./public',
-        historyApiFallback: true,
-        inline: true
-      }
-}
+        },
+        {
+          test: /\.css$/,
+          use: [
+            {
+            loader: 'style-loader'
+            },{
+              loader: 's-loader'
+            }
+          ]
+        }
+      ],
+    },
+
+    devServer: {
+      contentBase:'./public',
+      historyApiFallback: true,
+      inline: true
+    }
+  }

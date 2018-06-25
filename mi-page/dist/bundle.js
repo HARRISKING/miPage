@@ -20417,7 +20417,7 @@ var Home = function (_React$Component) {
                     _react2.default.createElement(
                         'p',
                         null,
-                        '\u6211\u662F\u6B63\u6587'
+                        '\u6211\u662F\u6211\u662Fffgfdf\u6B63\u6587'
                     )
                 ),
                 _react2.default.createElement(_Footer2.default, null)

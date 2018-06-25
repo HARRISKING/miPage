@@ -8,7 +8,7 @@ class Home extends React.Component{
             <div>
                 <Navigator />
                 <div>
-                    <p>我是正文</p>
+                    <p>我是我是ffgfdf正文</p>
                 </div>
                 <Footer />
             </div>
