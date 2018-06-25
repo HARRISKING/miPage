@@ -12,13 +12,14 @@
     "dev": "react-scripts start",
     "build": "webpack",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "server": "webpack-dev-server open"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "compile": "0.0.2",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "webpack": "^3.11.0",
