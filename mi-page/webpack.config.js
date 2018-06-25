@@ -6,6 +6,9 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     module: {
         rules: [
           {
@@ -14,7 +17,8 @@ module.exports = {
             use: {
               loader: 'babel-loader',
               options: {
-                presets: ['env']
+                presets: ['env'],
+                cacheDirectory: true
               }
             }
           }

@@ -1,5 +1,6 @@
-var views = {
-    Home: require('./Home')
-}
 
-module.exports = views
+var views = {
+    Home: require('./Home'),
+  }
+  
+  module.exports = views

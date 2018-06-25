@@ -869,7 +869,7 @@ var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Home = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./view/Home\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _Home = __webpack_require__(25);
 
 var _Home2 = _interopRequireDefault(_Home);
 
@@ -20361,6 +20361,12 @@ function camelize(string) {
 }
 
 module.exports = camelize;
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (8:12)\nYou may need an appropriate loader to handle this file type.\n|     render(){\n|         return (\n|             <div>\n|                 <Navigator />\n|                 <div>");
 
 /***/ })
 /******/ ]);
