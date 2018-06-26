@@ -9,9 +9,9 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack -p",
     "test": "react-scripts test --env=jsdom",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server --open"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
