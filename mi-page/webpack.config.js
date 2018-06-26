@@ -1,6 +1,7 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: __dirname + '/src/index.js',
@@ -44,13 +45,11 @@ module.exports = {
       new ExtractTextPlugin('index.css'),
       new CopyWebpackPlugin([
         { from:'', to:'/index.css' }
-      ])
+      ]),
+      new HtmlWebpackPlugin(),
     ],
 
     devServer: {
       contentBase:'./dist',
-      historyApiFallback: true,
-      inline: true,
-      publicPath: '/dist'
     }
   }
