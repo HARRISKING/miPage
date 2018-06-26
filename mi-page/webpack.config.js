@@ -51,6 +51,6 @@ module.exports = {
       contentBase:'./dist',
       historyApiFallback: true,
       inline: true,
-      publicPath: '/'
+      publicPath: '/dist'
     }
   }
