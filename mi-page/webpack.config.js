@@ -10,11 +10,39 @@ module.exports = {
     },
 
     plugins: [
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+
+        }),
     ],
 
     resolve: {
         extensions: ['.js','.jsx']
     },
 
+    module: {
+        rules: [
+            {
+                test: /(\.jsx|\.js)$/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            'env','react'
+                        ]
+                    }
+                },
+                exclude: /node_modules/
+
+            }
+        ]
+    },
+
+    devtool: 'source-map',
+
+    devServer: {
+        contentBase: './public',
+        historyApiFallback: true,
+        inline: true,
+    }
 }
