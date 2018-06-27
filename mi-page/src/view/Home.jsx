@@ -7,7 +7,7 @@ class Home extends React.Component{
         return (
             <div>
                 <Navigator />
-                <div>
+                <div className="content">
                     <p>我是我是ffgfdf正文</p>
                 </div>
                 <Footer />
