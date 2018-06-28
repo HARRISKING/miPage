@@ -1,32 +1,34 @@
 {
   "name": "mi-page",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "babel": "^6.23.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
-  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "react-scripts start",
-    "build": "webpack",
-    "test": "react-scripts test --env=jsdom",
-    "server": "webpack-dev-server open"
+    "dev": "webpack -p && webpack-dev-server --open"
   },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "compile": "0.0.2",
     "css-loader": "^0.28.11",
+<<<<<<< HEAD
     "node-sass": "^4.9.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "sass-loader": "^7.0.3",
+=======
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "sass-loader": "^7.0.3",
+    "source-map": "^0.7.3",
+>>>>>>> 74f5175b96668c8d9eb6826d3512b9c2055a9b54
     "style-loader": "^0.21.0",
-    "webpack": "^3.11.0",
+    "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
   }

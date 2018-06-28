@@ -1,27 +1,37 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: __dirname + '/src/index.js',
+
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname,'public'),
+    filename: 'bundle.js'
     },
+
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+
+        }),
+    ],
+
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js','.jsx']
     },
+
     module: {
-      rules: [
-        {
-          test: /(\.js|\.jsx)$/,
-          exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
-          }
-        },
-        {
-          test: /\.css$/,
-          use: [
+        rules: [
             {
+                test: /(\.jsx|\.js)$/,
+                use: {
+                    loader: 'babel-loader',
+                },
+                exclude: /node_modules/
+
+            },
+            {
+<<<<<<< HEAD
             loader: 'style-loader'
             },{
               loader: 'css-loader'
@@ -37,15 +47,27 @@ module.exports = {
               loader: 'css-loader'
             },{
               loader: 'sass-loader'
+=======
+                test: /(\.css|\.scss)$/,
+                use: [
+                    {
+                        loader:"style-loader"
+                    },{
+                        loader:"css-loader"
+                    },{
+                        loader:"sass-loader"
+                    }
+                ]
+>>>>>>> 74f5175b96668c8d9eb6826d3512b9c2055a9b54
             }
-          ]
-        }
-      ],
+        ]
     },
 
+    devtool: 'source-map',
+
     devServer: {
-      contentBase:'./public',
-      historyApiFallback: true,
-      inline: true
+        contentBase: './public',
+        historyApiFallback: true,
+        inline: true,
     }
-  }
+}
