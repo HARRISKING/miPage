@@ -31,23 +31,6 @@ module.exports = {
 
             },
             {
-<<<<<<< HEAD
-            loader: 'style-loader'
-            },{
-              loader: 'css-loader'
-            }
-          ]
-        },
-        {
-          test: /\.sass$/,
-          use: [
-            {
-              loader: 'style-loader'
-            },{
-              loader: 'css-loader'
-            },{
-              loader: 'sass-loader'
-=======
                 test: /(\.css|\.scss)$/,
                 use: [
                     {
@@ -58,7 +41,6 @@ module.exports = {
                         loader:"sass-loader"
                     }
                 ]
->>>>>>> 74f5175b96668c8d9eb6826d3512b9c2055a9b54
             }
         ]
     },

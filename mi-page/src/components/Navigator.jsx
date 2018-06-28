@@ -5,22 +5,19 @@ import Home from '../views/Home'
 export default class Navigator extends React.Component {
     render() {
         return (
-            <Router>
-                <div>
-                    sdfsd
-                    {/* <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/redmi">红米</Link>
-                        </li>
-                    </ul>
-
-                    <Route path="/" component={ Home } /> */}
-                </div>
-            </Router>
-
+            // <Router>
+            //     <div>
+            //         <ul>
+            //             <li>
+            //                 <Link to="/">Home</Link>
+            //             </li>
+            //             <li>
+            //                 <Link to="/secPage">第二页</Link>
+            //             </li>
+            //         </ul>
+            //     </div>
+            // </Router>
+            <div>dsfasdf</div>
         )
     }
 }
